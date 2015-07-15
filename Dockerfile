@@ -21,7 +21,7 @@ RUN curl -O http://mirror.nbtelecom.com.br/apache/tomcat/tomcat-$TOMCAT_VERSION/
 RUN tar xzvf apache-tomcat-$TOMCAT_RELEASE.tar.gz -C /opt
 RUN ln -s /opt/apache-tomcat-$TOMCAT_RELEASE /opt/tomcat
 
-# Add user tomcat / pass: tomcat-users.xml
+# Add user tomcat / pass: tomcat
 ADD tomcat-users.xml /opt/tomcat/conf/
 RUN chown -R tomcat:apache /opt/apache-tomcat-$TOMCAT_RELEASE
 
