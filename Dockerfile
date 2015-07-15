@@ -24,7 +24,7 @@ RUN chown -R tomcat:apache /opt/apache-tomcat-$TOMCAT_RELEASE
 
 # Add user tomcat / pass: tomcat-users.xml
 USER tomcat
-ADD tomcat-users.xml /opt/tomcat/conf
+ADD tomcat-users.xml /opt/tomcat/conf/
 
 # Deploy
 USER tomcat
