@@ -5,7 +5,7 @@ Apache Tomcat/8.0.24 with OpenJDK 1.8
 ==========================
 
 ```sh
-docker run -it -p 8080:8080 emedeiros/wildfly
+docker run -it -p 8080:8080 emedeiros/tomcat
 ```
 
 2. Console access:
