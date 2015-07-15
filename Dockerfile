@@ -20,11 +20,10 @@ RUN yum install java-1.8.0-openjdk-devel -y
 RUN curl -O http://mirror.nbtelecom.com.br/apache/tomcat/tomcat-$TOMCAT_VERSION/v$TOMCAT_RELEASE/bin/apache-tomcat-$TOMCAT_RELEASE.tar.gz
 RUN tar xzvf apache-tomcat-$TOMCAT_RELEASE.tar.gz -C /opt
 RUN ln -s /opt/apache-tomcat-$TOMCAT_RELEASE /opt/tomcat
-RUN chown -R tomcat:apache /opt/apache-tomcat-$TOMCAT_RELEASE
 
 # Add user tomcat / pass: tomcat-users.xml
-USER tomcat
 ADD tomcat-users.xml /opt/tomcat/conf/
+RUN chown -R tomcat:apache /opt/apache-tomcat-$TOMCAT_RELEASE
 
 # Deploy
 USER tomcat
@@ -33,4 +32,4 @@ ADD hello.war /opt/tomcat/webapps/
 # Set the default command to run on boot
 # This will boot TOMCAT
 USER tomcat
-CMD ["/opt/tomcat/bin/startup.sh"]
+CMD ["/opt/tomcat/bin/catalina.sh", "run"]
