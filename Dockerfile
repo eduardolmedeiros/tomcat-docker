@@ -13,7 +13,7 @@ ENV TOMCAT_VERSION 8
 RUN groupadd apache
 RUN adduser -g apache tomcat
 
-# Install JDK 1.8
+# Install OpenJDK 8
 RUN yum install java-1.8.0-openjdk-devel -y
 
 # Download and install tomcat
