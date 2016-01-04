@@ -1,7 +1,7 @@
-Apache Tomcat/8.0.24 with OpenJDK 8
+Apache Tomcat/8.0.30 with OpenJDK 8
 ====================================
 
-1. Starting Apache Tomcat/8.0.24
+1. Starting Apache Tomcat/8.0.30
 ==========================
 
 ```sh
