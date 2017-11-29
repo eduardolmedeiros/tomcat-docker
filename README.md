@@ -1,4 +1,4 @@
-Apache Tomcat/8.5.4 with OpenJDK 8
+Apache Tomcat 8 with OpenJDK 8
 ====================================
 
 1. Starting Apache Tomcat/8.5.4
