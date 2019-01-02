@@ -6,7 +6,7 @@ MAINTAINER <contato@eduardomedeiros.me>
 EXPOSE 8080
 
 # Set the TOMCAT_VERSION env variable
-ENV TOMCAT_RELEASE 8.5.32
+ENV TOMCAT_RELEASE 8.5.37
 ENV TOMCAT_VERSION 8
 
 # Add user and group wildfly
