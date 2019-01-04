@@ -2,9 +2,14 @@
 
 ## 1. Starting Apache Tomcat
 
+### 1.1 via docker cli
+
 ```sh
 docker run -it -p 8080:8080 emedeiros/tomcat
 ```
+
+### 1.2 via docker-compose
+docker-compose start
 
 ## 2. Console access:
 
