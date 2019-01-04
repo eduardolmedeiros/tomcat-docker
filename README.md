@@ -9,7 +9,10 @@ docker run -it -p 8080:8080 emedeiros/tomcat
 ```
 
 ### 1.2 via docker-compose
+
+```sh
 docker-compose start
+```
 
 ## 2. Console access:
 
