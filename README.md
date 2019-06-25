@@ -1,16 +1,26 @@
 # Apache Tomcat 8 with OpenJDK 8
 
+# Building a docker image
+```
+git clone https://github.com/eduardolmedeiros/tomcat-docker.git
+docker build -t emedeiros/tomcat:<version> .
+```
+# Building a docker image using variables
+```
+docker build --build-arg "TOMCAT_RELEASE=8.5.41" -t tomcat:latest .
+```
+
 ## 1. Starting Apache Tomcat
 
 ### 1.1 via docker cli
 
-```sh
+```
 docker run -it -p 8080:8080 emedeiros/tomcat
 ```
 
 ### 1.2 via docker-compose
 
-```sh
+```
 docker-compose up -d
 ```
 
