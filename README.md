@@ -40,15 +40,6 @@ docker run -it -p 8080:8080 emedeiros/tomcat
 docker-compose up -d
 ```
 
-## 2. Console access:
-
-
-### Details to access web-console:
-
-* URL:  http://your.ip:8080/manager/html
-* User: tomcat
-* Password: tomcat
-
-## 2. Deploy test
+## 2. Deploy default
 
 * URL: http://your.ip:8080/hello
