@@ -4,7 +4,7 @@ LABEL maintainer=eduardo@dotmac.com.br
 
 # Set the TOMCAT_VERSION env variable
 ARG TOMCAT_BASE_DIR=/opt/tomcat
-ARG TOMCAT_RELEASE=8.5.47
+ARG TOMCAT_RELEASE=8.5.50
 ARG TOMCAT_VERSION=8
 ARG TOMCAT_USER=tomcat
 ARG DEPLOY_URL=https://github.com/eduardolmedeiros/middleware-utils/raw/master/deploy_samples/hello.war
