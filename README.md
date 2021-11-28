@@ -1,5 +1,9 @@
 # Apache Tomcat 8 with OpenJDK 8
 
+This is a docker image with Tomcat 8 that ships a hello world java application. 
+Useful for demo and labs.
+
+
 ## Building stage
 
 ### A description of the variables for the building stage
