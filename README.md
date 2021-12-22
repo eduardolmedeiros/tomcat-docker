@@ -1,4 +1,4 @@
-# Apache Tomcat 8 with OpenJDK 8
+# Apache Tomcat 10 with OpenJDK 11
 
 This is a docker image with Tomcat 8 that ships a hello world java application. 
 Useful for demo and labs.
@@ -27,7 +27,7 @@ docker build -t emedeiros/tomcat:<tag> .
 
 ### Building a docker image using variables
 ```
-docker build --build-arg "TOMCAT_RELEASE=8.5.72" -t emedeiros/tomcat:<tag> .
+docker build --build-arg "TOMCAT_RELEASE=10.0.14" -t emedeiros/tomcat:<tag> .
 ```
 
 ## 1. Starting Apache Tomcat
