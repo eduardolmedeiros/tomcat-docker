@@ -4,7 +4,7 @@ LABEL maintainer=eduardo@dotmac.com.br
 
 # Set the TOMCAT_VERSION env variable
 ARG TOMCAT_BASE_DIR=/opt/tomcat
-ARG TOMCAT_RELEASE=10.0.14
+ARG TOMCAT_RELEASE=10.0.20
 ARG TOMCAT_VERSION=10
 ARG TOMCAT_USER=tomcat
 ARG DEPLOY_URL=https://raw.githubusercontent.com/eduardolmedeiros/wildfly-docker/master/hello.war
