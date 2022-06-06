@@ -14,7 +14,7 @@ ARG DEPLOY_FILE=hello.war
 RUN useradd -U ${TOMCAT_USER}
 
 # Download and install tomcat
-RUN curl -O http://mirror.nbtelecom.com.br/apache/tomcat/tomcat-${TOMCAT_VERSION}/v${TOMCAT_RELEASE}/bin/apache-tomcat-${TOMCAT_RELEASE}.tar.gz && \
+RUN curl -O https://dlcdn.apache.org/tomcat/tomcat-${TOMCAT_VERSION}/v${TOMCAT_RELEASE}/bin/apache-tomcat-${TOMCAT_RELEASE}.tar.gz \
 tar xzvf apache-tomcat-${TOMCAT_RELEASE}.tar.gz -C /opt && \
 ln -s /opt/apache-tomcat-${TOMCAT_RELEASE} /opt/tomcat && \
 rm -f /apache-tomcat-${TOMCAT_RELEASE}.tar.gz
